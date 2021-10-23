@@ -1,0 +1,56 @@
+@mixin title-line($top:0,$left:-4%,$height:100%,$color:#CF1B1B) {
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: 2px;
+    height: $height;
+    background-color: $color;  
+}
+
+@mixin font-title ($f-s:1.75rem){
+    font-size: $f-s;
+    font-weight: 600;
+    position: relative;
+}
+
+
+@mixin inputs {
+    border: none;
+    outline: none;
+    border-radius: 0.3125rem;
+    padding: 5%;
+    width: 90%;
+    &::-webkit-input-placeholder {
+        color: #000;
+        font-size: 20px;
+    }
+}
+
+@mixin inputs-btn {
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background: -webkit-linear-gradient(180deg, #CF1B1B 0%, #9D0B0B 100%);
+    background: -moz-linear-gradient(180deg, #CF1B1B 0%, #9D0B0B 100%);
+    background: linear-gradient(180deg, #CF1B1B 0%, #9D0B0B 100%);
+}
+
+
+
+@mixin footer-title {
+     font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;     
+}
+
+@mixin footer-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 2;
+    transition: all .2s ease-out;
+    &:hover{
+        color: #CF1B1B;
+    }
+}
+
